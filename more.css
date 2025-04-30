@@ -15,3 +15,116 @@ body {
     background: linear-gradient(190deg, rgb(16, 8, 8) 1%, rgb(49, 39, 56) 90%);
     }
     
+    .table {
+        padding: 5px 12px;
+        background: rgba(116, 80, 116, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        text-align: center;
+        width: 70vw; /* Adjust width relative to viewport */
+        height: 70vh; /* Adjust height relative to viewport */
+        position: absolute;
+        top: 50%; /* Vertically center */
+        left: 50%; /* Horizontally center */
+        transform: translate(-50%, -50%); /* Adjust to truly center the element */
+      }
+      
+      /* Responsiveness for smaller screens */
+      @media (max-width: 768px) {
+        .table {
+          width: 80vw; /* Wider width for smaller screens */
+          height: 25vh; /* Adjust height for smaller screens */
+        }
+      }
+      
+
+      .Go_back {
+        padding: 5px;
+        color: white;
+        border-color: aliceblue;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        position: absolute;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      .Go_back:hover {
+
+        cursor: pointer;
+      }
+
+
+      .column_1 {
+        
+        padding: 5px 12px;
+        background: rgba(116, 80, 116, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        text-align: center;
+        width: 30vw; /* Adjust width relative to viewport */
+        height: 60vh; /* Adjust height relative to viewport */
+        position: absolute;
+        top: 50%; /* Vertically center */
+        left: 26%; /* Horizontally center */
+        transform: translate(-50%, -50%); /* Adjust to truly center the element */
+      }
+
+      .column_2 {
+        
+        padding: 5px 12px;
+        background: rgba(116, 80, 116, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        text-align: center;
+        width: 30vw; 
+        height: 25vh; 
+        position: absolute;
+        top: 29.08%; 
+        left: 74%; 
+        transform: translate(-50%, -50%); 
+      }
+
+      
+      .column_3 {
+        
+        padding: 5px 12px;
+        background: rgba(116, 80, 116, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        text-align: center;
+        width: 30vw; 
+        height: 25vh; 
+        position: absolute;
+        top: 70.8%; 
+        left: 74%; 
+        transform: translate(-50%, -50%); 
+      }
+
+
+      @media (max-width: 768px) {
+        .column_1, .column_2 {
+          width: 40%; 
+          height: 50%; 
+        }
+      }

@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function () {
       const text = this.textContent.trim().toLowerCase();
       if (text === 'more options') {
-        window.location.href = 'more.html'; // Redirect
+        window.location.href = 'https://hyztax.github.io/ai/more.html'; // Redirect
       } 
     });
   });

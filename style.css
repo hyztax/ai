@@ -113,3 +113,68 @@ body ::selection {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
 }
+
+.ai_info {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  padding: 5px 12px;
+  background: rgba(116, 80, 116, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  overflow-y: auto; 
+}
+
+.ai_info::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.Ai_Info h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.Ai_Info h2 {
+  color: white;
+  margin-top: -20px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.Ai_Info h4 {
+  color: white;
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: left;
+  display: block;
+  max-height: 340px;                  /* Adjust the max height to fit the desired number of lines */
+  overflow: hidden;                  /* Hides anything that overflows */
+  line-height: 20px; 
+  font-family: Geneva;                /* Adjust line height to control text spacing */
+}
+
+.More_text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* More Text Content Styling */
+.More_text_content {
+  display: none;
+  max-height: 50px;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease;
+  color: white;
+  font-family: Geneva;
+}
+
+/* Show More Text Content when opened */
+.More_text_content.open {
+  display: block;
+  max-height: 500px;
+}

@@ -42,11 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.style.display = 'none';
       }
 
-      if (text === 'more options') {
-        window.location.href = 'https://hyztax.github.io/ai/more.html';
+      if (text === 'read more') {
+        window.location.href = 'more.html';
       }
     });
   });
+
+ 
 
   // Hide AI info and restore title/menu on outside click
   document.addEventListener('click', function (e) {

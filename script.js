@@ -29,17 +29,16 @@ document.addEventListener('DOMContentLoaded', function () {
   // Menu item click behavior
   menuItems.forEach(item => {
     item.addEventListener('click', function () {
-      const text = this.textContent.trim().toLowerCase();
-
+      const text = this.textContent.trim().toLowerCase().replace(/[’']/g, "'");
+  
       if (text === "what's ai?") {
-        window.location.href = 'info.html';  // ✅ Redirect to ai.html
-      }
-
-      if (text === 'read more') {
+        window.location.href = 'info.html';  
+      } else if (text === 'read more') {
         window.location.href = 'more.html';
       }
     });
   });
+  
 
   // Optional: close the menu if clicking outside
   document.addEventListener('click', function (e) {

@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const text = this.textContent.trim().toLowerCase();
 
       if (text === "what's ai?") {
-        window.location.href = 'info.html';  
+        window.location.href = "info.html";  
       }
 
       if (text === 'read more') {

@@ -1,8 +1,12 @@
 body {
+    background: linear-gradient(190deg, rgb(16, 8, 8) 1%, rgb(49, 39, 56) 90%);
     background-color: rgb(87, 82, 82);
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    background: linear-gradient(-45deg, #30213e, #40264d, #231830, #1e1e2f);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
     }
     
     body ::selection{
@@ -10,11 +14,21 @@ body {
     color:white;
     }
     
-    body {
-    background: rgb(89,86,86);
-    background: linear-gradient(190deg, rgb(16, 8, 8) 1%, rgb(34, 13, 48) 90%);
+   
+    
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
     
+
     .table {
         padding: 5px 12px;
         background: rgba(116, 80, 116, 0.2);

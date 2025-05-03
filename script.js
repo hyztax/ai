@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const continueButton = document.getElementById('continueButton');
   const menu = document.getElementById('context-menu');
   const menuItems = document.querySelectorAll('.menu-item');
-  const title = document.querySelector('.Title');
 
   // Initially hide menu
   menu.style.zIndex = '-1';
@@ -31,17 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function () {
       const text = this.textContent.trim().toLowerCase();
 
-      if (text === "what's ai?") {
-        window.location.href = "info.html";  
-      }
-
-      if (text === 'read more') {
-        window.location.href = 'more.html';
+      if (text.includes("what") && text.includes("ai")) {
+        window.location.href = "info.html";
+      } else if (text.includes("read more")) {
+        window.location.href = "more.html";
       }
     });
   });
 
-  // Optional: close the menu if clicking outside
+  // Close the menu if clicking outside
   document.addEventListener('click', function (e) {
     const clickedInsideMenu = menu.contains(e.target);
 

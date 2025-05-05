@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const continueButton = document.getElementById('continueButton');
   const menu = document.getElementById('context-menu');
-  const menuItems = document.querySelectorAll('.menu-item, .menu-item2'); // combine both selectors
+  const menuItems = document.querySelectorAll('.menu-item, .menu-item2'); 
 
   
   menu.style.zIndex = '-1';

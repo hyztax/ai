@@ -1,11 +1,10 @@
-/* Base Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body Styling */
+
 body {
   background: linear-gradient(190deg, rgb(16, 8, 8) 1%, rgb(49, 39, 56) 90%);
   width: 100%;
@@ -33,28 +32,28 @@ body {
   }
 }
 
-/* Body Text Selection */
+
 body ::selection {
   background: rgb(4, 3, 3);
   color: white;
 }
 
-/* Title Styling */
+
 .Title {
   color: white;
-  margin-top:-70; /* Adjust margin to center title vertically */
-  font-size: 1.5rem;  /* Adjust font size for readability */
+  margin-top:-70;
+  font-size: 1.5rem;  
   font-weight: bold;
   text-align: center;
   width: 100%;
 }
 
-/* Continue Button */
+
 .continue-button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 50%; /* Center button vertically */
+  top: 50%; 
   padding: 10px 20px;
   background: rgba(116, 80, 116, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -71,7 +70,7 @@ body ::selection {
   z-index: 100;
 }
 
-/* Button Hover Effect */
+
 .continue-button:hover {
   background-color: rgb(10, 11, 12);
   background: rgba(255, 255, 255, 0.2);
@@ -79,13 +78,13 @@ body ::selection {
   border-radius: 12px;
 }
 
-/* Context Menu */
+
 .context-menu {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
   opacity: 0;
-  pointer-events: none; /* Initially non-clickable */
+  pointer-events: none;
   display: none;
   margin-top: 40px;
   padding: 10px;
@@ -102,14 +101,14 @@ body ::selection {
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* When the menu is shown */
+
 .context-menu.show {
   display: flex;
   opacity: 1;
-  transform: translateX(-50%) translateY(0); /* Smooth slide effect */
+  transform: translateX(-50%) translateY(0); 
 }
 
-/* Styling for Menu Items */
+
 .menu-item {
   padding: 5px 12px;
   background: rgba(116, 80, 116, 0.2);
@@ -123,7 +122,7 @@ body ::selection {
   text-align: center;
 }
 
-/* Hover Effect for Menu Items */
+
 .menu-item:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
@@ -142,7 +141,7 @@ body ::selection {
   text-align: center;
 }
 
-/* Hover Effect for Menu Items */
+
 .menu-item2:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);

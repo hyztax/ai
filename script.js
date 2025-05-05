@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const menu = document.getElementById('context-menu');
   const menuItems = document.querySelectorAll('.menu-item, .menu-item2'); // combine both selectors
 
-  // Initially hide menu
+  
   menu.style.zIndex = '-1';
   menu.style.pointerEvents = 'none';
   menu.style.opacity = '0';
 
-  // CONTINUE button toggles context menu
+ 
   continueButton.addEventListener('click', function () {
     const isVisible = menu.classList.toggle('show');
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Menu item click behavior
+
   menuItems.forEach(item => {
     item.addEventListener('click', function () {
       const text = this.textContent.trim().toLowerCase();
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Close the menu if clicking outside
+  
   document.addEventListener('click', function (e) {
     const clickedInsideMenu = menu.contains(e.target);
 

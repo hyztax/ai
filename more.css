@@ -40,19 +40,19 @@ body {
         backdrop-filter: blur(10px);
         cursor: pointer;
         text-align: center;
-        width: 70vw; /* Adjust width relative to viewport */
-        height: 70vh; /* Adjust height relative to viewport */
+        width: 70vw;  
+        height: 70vh;  
         position: absolute;
-        top: 50%; /* Vertically center */
-        left: 50%; /* Horizontally center */
-        transform: translate(-50%, -50%); /* Adjust to truly center the element */
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);  
       }
       
-      /* Responsiveness for smaller screens */
+       
       @media (max-width: 768px) {
         .table {
-          width: 80vw; /* Wider width for smaller screens */
-          height: 25vh; /* Adjust height for smaller screens */
+          width: 80vw; 
+          height: 25vh;  
         }
       }
       
@@ -86,12 +86,12 @@ body {
         backdrop-filter: blur(10px);
         cursor: pointer;
         text-align: center;
-        width: 30vw; /* Adjust width relative to viewport */
-        height: 60vh; /* Adjust height relative to viewport */
+        width: 30vw; 
+        height: 60vh;  
         position: absolute;
-        top: 50%; /* Vertically center */
-        left: 26%; /* Horizontally center */
-        transform: translate(-50%, -50%); /* Adjust to truly center the element */
+        top: 50%; 
+        left: 26%;
+        transform: translate(-50%, -50%); 
       }
 
       .column_2 {

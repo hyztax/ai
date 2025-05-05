@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function () {
       const text = this.textContent.trim().toLowerCase();
 
-      if (text.includes("what")) {
+      if (text.includes("what") && text.includes("ai")) {
         window.location.href = "info.html";
       } else if (text.includes("read more")) {
         window.location.href = "more.html";

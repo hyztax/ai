@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  background: linear-gradient(-45deg, #30213e, #40264d, #231830, #1e1e2f);
+  background: linear-gradient(-45deg, #30213e, #361348, #0d011c, #510f5f);
   background-size: 400% 400%;
   animation: gradientMove 15s ease infinite;
 }
@@ -125,6 +125,25 @@ body ::selection {
 
 /* Hover Effect for Menu Items */
 .menu-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.menu-item2 {
+  padding: 5px 12px;
+  background: rgba(116, 80, 116, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover Effect for Menu Items */
+.menu-item2:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
 }

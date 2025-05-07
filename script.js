@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const text = this.textContent.trim().toLowerCase();
 
       if (text.includes("what") && text.includes("ai")) {
-        window.location.href = "info/index.html";
+        window.location.href = "info.html";
       } else if (text.includes("read more")) {
-        window.location.href = "/more.html";
+        window.location.href = "more.html";
       }
     });
   });

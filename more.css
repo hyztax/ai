@@ -184,6 +184,7 @@ body {
         color: rgb(218, 209, 209);
         height: 70px;
         margin-top: -4px;
+        
       }
 
       .column_3 h1{
@@ -191,3 +192,17 @@ body {
         margin-top: -90px;
     
       }
+
+      .column_3 h5{
+        color: rgb(218, 209, 209);
+        margin-top: -40px;
+       font-size: large;
+     
+    
+      }
+
+      #gmail_img {
+        width: 31px;
+        height: 31px; /* optional */
+      }
+      

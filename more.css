@@ -201,9 +201,22 @@ body {
     
       }
 
-      #gmail_img {
-        width: 31px;
-        height: 31px; /* optional */
+      .holder_contact {
+        padding: 5px 12px;
+        background: rgba(27, 22, 27, 0.2);
+        border: 1px solid rgba(244, 240, 240, 0.765);
+        border-radius: 20px;
+        width: 130px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
       }
       
+      .logo img {
+        width: 40px;
+        height: auto;
+        padding: 5px;
+      }
       

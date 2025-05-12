@@ -213,11 +213,22 @@ body {
         align-items: center;
         margin: 0 auto;
       }
+
+      .logo {
+      
+        transition: transform 0.15s ease;
+      }
       
       .logo img {
         width: 40px;
         height: auto;
         padding: 5px;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
       }
       
 

@@ -77,8 +77,8 @@ body {
       .column_1 {
         
         padding: 5px 12px;
-        background: rgba(116, 80, 116, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(116, 91, 116, 0.126);
+        border: 1px solid rgba(51, 41, 41, 0.767);
         border-radius: 10px;
         color: white;
         font-weight: bold;
@@ -97,8 +97,8 @@ body {
       .column_2 {
         
         padding: 5px 12px;
-        background: rgba(116, 80, 116, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(116, 91, 116, 0.126);
+        border: 1px solid rgba(21, 20, 20, 0.3);
         border-radius: 10px;
         color: white;
         font-weight: bold;
@@ -118,8 +118,8 @@ body {
       .column_3 {
         
         padding: 5px 12px;
-        background: rgba(116, 80, 116, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(116, 91, 116, 0.126);
+        border: 1px solid rgba(7, 7, 7, 0.3);
         border-radius: 10px;
         color: white;
         font-weight: bold;
@@ -163,7 +163,7 @@ body {
       .column_2 h4{
         padding: 5px 12px;
         background: rgba(27, 22, 27, 0.2);
-        border: 5px solid rgba(11, 9, 9, 0.3);
+        border: 1px solid rgba(18, 17, 17, 0.3);
         border-radius: 5px;
         color: rgb(218, 209, 209);
       }
@@ -181,14 +181,14 @@ body {
 
       .column_3 h2{
         
-        color: rgb(218, 209, 209);
+        color: rgb(193, 189, 189);
         height: 70px;
         margin-top: -4px;
         
       }
 
       .column_3 h1{
-        color: rgb(218, 209, 209);
+        color: rgb(193, 189, 189);
         margin-top: -90px;
     
       }
@@ -203,7 +203,7 @@ body {
 
       .holder_contact {
         padding: 5px 12px;
-        background: rgba(27, 22, 27, 0.2);
+        background: rgba(10, 10, 10, 0.347);
         border: 1px solid rgba(244, 240, 240, 0.765);
         border-radius: 20px;
         width: 130px;
@@ -218,5 +218,16 @@ body {
         width: 40px;
         height: auto;
         padding: 5px;
+      }
+      
+
+      .links {
+        color: rgba(44, 189, 126, 0.9);
+        display: block;               /* makes each link take full width and stack */
+        margin-bottom: 3px;           /* spacing between links */
+        text-decoration: none;        /* optional: removes underline */
+        text-overflow: ellipsis;      /* works with overflow:hidden + white-space */
+        overflow: hidden;
+        white-space: nowrap;
       }
       

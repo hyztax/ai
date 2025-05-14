@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const continueButton = document.getElementById('continueButton');
   const menu = document.getElementById('context-menu');
   const menuItems = document.querySelectorAll('.menu-item');
-  const aiTextDiv = document.querySelector('.Ai_text');
+  const aiTextDiv = document.querySelector('.Ai_Div');
 
-  // Hide menu and Ai_text initially
+  // Initial hide
   menu.style.zIndex = '-1';
   menu.style.pointerEvents = 'none';
   menu.style.opacity = '0';
   aiTextDiv.style.display = 'none';
 
-  // Toggle menu on continue button click
+  // Toggle menu visibility
   continueButton.addEventListener('click', function () {
     const isVisible = menu.classList.toggle('show');
 
@@ -24,24 +24,39 @@ document.addEventListener('DOMContentLoaded', function () {
       menu.style.pointerEvents = 'none';
       menu.style.opacity = '0';
       continueButton.style.display = 'inline-block';
+      aiTextDiv.style.display = 'none'; // Hide text when menu is closed
     }
   });
 
-  // Show Ai_text div if "what's ai" is clicked
+  // Handle menu item clicks
   menuItems.forEach(item => {
     item.addEventListener('click', function (event) {
       const text = this.textContent.trim().toLowerCase();
 
       if (text.includes("what") && text.includes("ai")) {
-        aiTextDiv.style.display = 'block';
-        event.stopPropagation(); // Stop event so it doesn't close immediately
+        const isAiVisible = aiTextDiv.style.display === 'block';
+
+        if (isAiVisible) {
+          // Hide both AI text and menu
+          aiTextDiv.style.display = 'none';
+          menu.classList.remove('show');
+          menu.style.zIndex = '-1';
+          menu.style.pointerEvents = 'none';
+          menu.style.opacity = '0';
+          continueButton.style.display = 'inline-block';
+        } else {
+          // Show AI text
+          aiTextDiv.style.display = 'block';
+        }
+
+        event.stopPropagation(); // Prevent document click from firing
       } else if (text.includes("read more")) {
         window.location.href = "more.html";
       }
     });
   });
 
-  // Close menu and Ai_text when clicking outside
+  // Click outside to close everything
   document.addEventListener('click', function (e) {
     const clickedInsideMenu = menu.contains(e.target);
     const clickedInsideAiText = aiTextDiv.contains(e.target);
@@ -62,8 +77,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Prevent click inside Ai_text from closing it
+  // Prevent AI text clicks from closing it
   aiTextDiv.addEventListener('click', function (e) {
     e.stopPropagation();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.settings-btn');
+  const dropdown = document.querySelector('.settings-dropdown');
+
+  btn.addEventListener('click', () => {
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.settings-wrapper')) {
+      dropdown.style.display = 'none';
+    }
   });
 });

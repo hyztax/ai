@@ -61,16 +61,18 @@ body {
         padding: 5px;
         color: white;
         border-color: aliceblue;
-        border-radius: 5px;
+        border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         position: absolute;
         text-align: center;
         margin-top: 5px;
+        background-color: #36134876;
       }
 
       .Go_back:hover {
 
         cursor: pointer;
+        
       }
 
 
@@ -233,12 +235,20 @@ body {
       
 
       .links {
-        color: rgba(44, 189, 126, 0.9);
-        display: block;               /* makes each link take full width and stack */
-        margin-bottom: 3px;           /* spacing between links */
-        text-decoration: none;        /* optional: removes underline */
-        text-overflow: ellipsis;      /* works with overflow:hidden + white-space */
+        color: rgba(218, 205, 210, 0.9);
+        display: block;
+        margin-bottom: 3px;
+        text-decoration: none;
+        text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        text-shadow: 0 0 5px rgba(218, 224, 220, 0.7), 
+        0 0 10px rgb(42, 40, 45), 
+        0 0 15px rgba(255, 255, 255, 0.3);
+        transition: transform 0.3s ease;
       }
-      
+
+      .links:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }

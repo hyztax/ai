@@ -264,6 +264,7 @@ body ::selection {
   font-size: 20px;
   color: white;
   cursor: pointer;
+  width: 50px;
 }
 
 .settings-dropdown {
@@ -271,13 +272,14 @@ body ::selection {
   position: absolute;
   top: 50px;
   right: 0;
-  background: rgba(40, 30, 40, 0.8);
+  background: rgba(40, 30, 40, 0.201);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   padding: 10px;
-  min-width: 150px;
+  min-width: 100px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .settings-dropdown ul {
@@ -298,4 +300,9 @@ body ::selection {
 
 .settings-dropdown a:hover {
   color: rgb(75, 81, 81);
+}
+
+.settings-btn:hover {
+  background: rgba(45, 1, 45, 0.183);
+  cursor: pointer;
 }
